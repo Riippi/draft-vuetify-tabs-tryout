@@ -1,6 +1,8 @@
 <template>
   <v-app>
-    <v-tabs v-model="activeTab" optional>
+    <v-tabs v-model="activeTab">
+      <!-- <v-tabs v-model="activeTab" optional>
+     -->
       <v-tabs-slider
         color="primary"
         class="xrd-main-tabs-slider"

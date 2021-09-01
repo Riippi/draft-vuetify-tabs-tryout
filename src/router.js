@@ -15,21 +15,31 @@ const routes = [
     component: () => import("./views/Page1.vue"),
     children: [
       {
-        path: "child1",
+        path: "/page1/child1",
         name: "child10",
         component: () => import("./views/Child.vue")
       },
       {
-        path: "child2",
+        path: "/page1/child2",
         name: "child20",
         component: () => import("./views/Child.vue")
       },
       {
-        path: "child3",
+        path: "/page1/child3",
         name: "child30",
         component: () => import("./views/Child.vue")
       }
     ]
+  },
+  {
+    path: "/page2",
+    name: "Page2",
+    component: () => import("./views/Page2.vue")
+  },
+  {
+    path: "/page3",
+    name: "Page3",
+    component: () => import("./views/Page2.vue")
   }
 ];
 
